@@ -66,7 +66,7 @@ class Busquedas {
             const instance = axios.create({
                 baseURL: `https://api.openweathermap.org`,
                 params: {
-                    'appid': 'aeb2fa77b7ade2d666909bfdd2215052',
+                    'appid': process.env.OPENWEATHER_KEY,
                     'units': 'metric',
                     'lang': 'es'
                 }
